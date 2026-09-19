@@ -56,3 +56,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+output/main.dSYM/Contents/Resources/Relocations/aarch64/main.yml
+output/main.dSYM/Contents/Resources/DWARF/main
+output/main.dSYM/Contents/Info.plist
+output/main
