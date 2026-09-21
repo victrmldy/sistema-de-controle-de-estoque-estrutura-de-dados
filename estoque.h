@@ -2,7 +2,8 @@
 #define ESTOQUE_H
 
 #define MAX_ITENS 50
-#define TAXA_PADRAO 0.05
+#define TAXA_PADRAO 0.10
+
 
 typedef struct {
     int id;
