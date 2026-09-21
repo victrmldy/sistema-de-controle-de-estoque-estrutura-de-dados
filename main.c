@@ -27,6 +27,14 @@ float calcular_total(Produto lista[], int total) {
     return soma + soma * TAXA_PADRAO;
 }
 
+float aplicar_desconto(float total) {
+    return total * (1 - TAXA_DESCONTO);
+}
+
+float aplicar_juros(float total) {
+    return total * (1 + TAXA_JUROS);
+}
+
 int main(void) {
     Produto estoque[MAX_ITENS];
     int total_produtos = 2;
@@ -61,6 +69,7 @@ int main(void) {
                 break;
             case 3:
                 printf("\nTotal com desconto a vista: R$ %.2f\n", aplicar_desconto(calcular_total(estoque, total_produtos)));
+                break;
             case 4:
                 printf("\nTotal com juros: R$ %.2f\n", aplicar_juros(calcular_total(estoque, total_produtos)));
                 break;
@@ -76,7 +85,4 @@ int main(void) {
     return 0;
 }
 
-float aplicar_desconto(float total) {
-    return total * (1 - TAXA_DESCONTO);
-}
 
